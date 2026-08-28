@@ -59,3 +59,24 @@ Drawbacks:
 - Lack of strong isolation - Security Risks.
 - Deployment & maintenance hell.
 - Lack of portability.
+
+## Introduction to Virtulization
+
+Virtualization introduced isolation, flexibility, protability, and scalability. It enables us to run more than one virtual machine, multiple operating systems, and applications on a single physical server.
+
+![Virtulization](C:\Users\chadi\OneDrive\Desktop\docker-learn\docker-learning\images\Virtualization.png)
+
+### Core Architecture
+
+1. **Physical Hardware (Host)**: The actual server containing CPU, RAM, storage, and network resources.
+2. **Hypervisor**: Software that creates and manages Virtual Machines by allocating hardware resources to them.
+3. **Virtual Machine (Guest)**: A software-based computer that runs its own Operating System, applications, and libraries independently of other VMs.
+
+#### Virtual Machines (VMs) - Issues
+
+- Heavyweight (slow to start)
+- Limited Scalability
+- Poor Dev/Test/Prod parity
+- Redundant OS overhead
+- Inefficient Image Management
+- Low portability
