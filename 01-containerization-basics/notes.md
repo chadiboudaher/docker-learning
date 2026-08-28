@@ -64,7 +64,7 @@ Drawbacks:
 
 Virtualization introduced isolation, flexibility, protability, and scalability. It enables us to run more than one virtual machine, multiple operating systems, and applications on a single physical server.
 
-![Virtulization](C:\Users\chadi\OneDrive\Desktop\docker-learn\docker-learning\images\Virtualization.png)
+![Virtulization](https://github.com/chadiboudaher/docker-learning/blob/main/images/Virtualization.png)
 
 ### Core Architecture
 
