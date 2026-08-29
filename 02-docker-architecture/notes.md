@@ -37,3 +37,34 @@ Can we run containers on Virtual Machines.
 | Redundamt OS overhead        | share the host OS kernel           |
 | Inefficient Image Management | Efficient Image Management         |
 | Poor Dev/Test/Prod parity    | Containers are excellent for CI/CD |
+
+## Docker Architecture
+
+Docker is a software platform that simplifies the process of building, running, managing, and distributing applications using containers.
+
+### Docker Client
+
+- it enables developers/users to interact with Docker.
+- When you use docker command, the docker client sends these commands to the Docker daemon (dockerd)
+
+### Docker Host
+
+The server or virtual machine on which Docker Engine is installed
+
+- The Docker Daemon (dockerd) is the heart of Docker
+
+### Docker Images
+
+images are read-only binary templates used to build containers.
+
+- They contain the application code, libraries, and dependencies required to run an application
+
+### Docker Daemon
+
+- It listens to Docker API requests and manages containers, images, network, and volumes.
+- It builds container images as requested by the client
+- It interfaces with docker registries to pull or publish images as requested by the client.
+
+### Docker Containers
+
+Containers and encapsulated environments in which you run applications.
