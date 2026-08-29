@@ -92,24 +92,3 @@ When you run a program (like bash, nginx, or python), the Linux kernel:
 1. Loads the program's code into memory
 2. Alloctes it a unique Process ID (PID)
 3. Create a process to execute the code
-
-## Containers Overview
-
-A container is a lightweight, isolated process running on a shared operating system kernel, packaged with everything it needs to run, including code, libraries, environment variables, runtime, configuration files.
-
-- We can run applications inside containers.
-
-### Containers - Features
-
-- Does not require a seperate OS
-- isolated, self-contained environments
-- Faster to create, start, and tear down
-- Repeatable
-- Portable
-- Easily scalable
-
-### Containerization Overview
-
-To build, ship and run containers, we need a container runtime engine installed on the host's operating system
-
-- Containerized applications are "isolated"
