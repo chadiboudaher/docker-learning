@@ -68,3 +68,27 @@ images are read-only binary templates used to build containers.
 ### Docker Containers
 
 Containers and encapsulated environments in which you run applications.
+
+### Docker Registries
+
+- A Docker registry stores Docker images
+- Docker Hub is the public registry that anyone can use
+
+### Understanding How Docker Works
+
+**Docker CLI**
+
+- Docker CLI communicates with the Docker Daemon/server, dockerd
+
+**dockerd**
+
+- dockerd processes the docker API requests and utilizes containerd functionality to manage the container's life-cycle.
+
+**Containerd**
+
+- Manages containers, Storage, and Networking
+- Pushes and pulls images
+
+**runC**
+
+- Created and runs containers
