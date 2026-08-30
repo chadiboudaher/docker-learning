@@ -74,3 +74,14 @@ docker stop [OPTIONS] CONTAINER [CONTAINER]
 - `docker stop my-container`: Stop the container my-container
 - `docker stop -t 30 my-container`: Stop the container my-container and allow it 30 seconds to stop gracefully.
 - `docker stop container1 container2`: Stop the two specific containers.
+
+## A Container is a Software Process
+
+```bash
+ps [OPTIONS]
+```
+
+- `ps a`: Show processes for all users (not just yours).
+- `ps -A`: Show all processes.
+- `ps x`: Show processes not attached to a terminal.
+- `ps u`: Show process owner (user) and display in user-friendly format.
