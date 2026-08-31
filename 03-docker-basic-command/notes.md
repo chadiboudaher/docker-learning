@@ -117,3 +117,30 @@ docker exec [OPTIONS] CONTAINER COMMAND [ARG]
 ## docker exec -it: Opening a Terminal Inside the Container
 
 - `docker exec -it my-container /bin/bash`: The two flags (-i or -t) are often used together to bind the I/O streams of the container to s pseudo terminal, creating an interactive terminal session.
+
+## docker run
+
+Create and start a container from a specified image in a single step.
+
+```bash
+docker run [OPTIONS] IMAGE [COMMAND] [ARG]
+```
+
+- `docker run nginx`: create and start a container using latest nginx image.
+- `docker run --name cont1 ubuntu:20.04`: Create and start a container from ubuntu:20.04 image and assign it a name cont1
+- `docker run -d nginx`: Create and start container from image nginx in the background (-d detached mode).
+
+## docker run -it Options
+
+- `docker run -it ubuntu /bin/bash`
+
+## docker run -rm Options
+
+Create and run an ubuntu container, echo the sentence "This will self-destruct", then delete the container
+
+- Use it for one off containers such testing
+- Do not use for long term containers
+
+```bash
+docker run --rm ubuntu echo "This will self-destruct"
+```
