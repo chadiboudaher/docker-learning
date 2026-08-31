@@ -85,3 +85,35 @@ ps [OPTIONS]
 - `ps -A`: Show all processes.
 - `ps x`: Show processes not attached to a terminal.
 - `ps u`: Show process owner (user) and display in user-friendly format.
+
+## docker exec
+
+Used to execute a command inside **a running** Docker container.
+
+- It can be used to interact with a container's file system, processes, and environment.
+
+```bash
+docker exec [OPTIONS] CONTAINER COMMAND [ARG]
+```
+
+- `docker exec my-container ls usr/src/app`: Run the **ls** command inside the container my-container to list the contents of the /usr/src/app directory.
+
+## docker exec: -t Option
+
+```bash
+docker exec [OPTIONS] CONTAINER COMMAND [ARG]
+```
+
+- `docker exec -t my-container ls /app`
+
+## docker exec: -i Option
+
+```bash
+docker exec [OPTIONS] CONTAINER COMMAND [ARG]
+```
+
+- `docker exec -i my-container cat /etc/hostname`: (-i or -interactive), it keeps the container through the standart input. Use it with interactive commands that expect user input like vim, bash, sh or applications that require input.
+
+## docker exec -it: Opening a Terminal Inside the Container
+
+- `docker exec -it my-container /bin/bash`: The two flags (-i or -t) are often used together to bind the I/O streams of the container to s pseudo terminal, creating an interactive terminal session.
