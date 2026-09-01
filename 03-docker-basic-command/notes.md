@@ -149,6 +149,11 @@ docker run --rm ubuntu echo "This will self-destruct"
 
 Use to retrieve detailed, low-level information about **containers**, **images**, **volumes**, or networks in JSON format.
 
+- You can run docker inspect on both running and stopped containers.
+
 ```bash
 docker inspect [OPTIONS] OBJECT [OBJECT]
 ```
+
+- `docker inspect my-container`: Returns detailed information about the container (name, ID, Network, COnfig...)
+- `docker inspect nginx:latest`: Returns information about the image named nginx with the latest tag, including: Image ID, Creation time and more
