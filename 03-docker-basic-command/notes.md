@@ -157,3 +157,24 @@ docker inspect [OPTIONS] OBJECT [OBJECT]
 
 - `docker inspect my-container`: Returns detailed information about the container (name, ID, Network, COnfig...)
 - `docker inspect nginx:latest`: Returns information about the image named nginx with the latest tag, including: Image ID, Creation time and more
+
+## docker rm
+
+Remove or delete one or more containers
+
+- Only removes stopped containers with this command, not the running ones.
+
+```bash
+docker rm [OPTIONS] CONTAINER [CONTAINER]
+```
+
+- `docker rm my-container`: Remove my-container
+- `docker rm -f my-container`: Stop my-container and remove it even if it's running
+
+## docker rmi
+
+Remove one or more Docker images from the local system
+
+```bash
+docker rmi [OPTIONS] IMAGE [IMAGE]
+```
