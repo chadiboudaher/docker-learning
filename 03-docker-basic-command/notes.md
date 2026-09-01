@@ -178,3 +178,32 @@ Remove one or more Docker images from the local system
 ```bash
 docker rmi [OPTIONS] IMAGE [IMAGE]
 ```
+
+## docker logs
+
+Use to retrieve the logs of a container.
+
+- This can be helpful for troubleshooting, debugging, and monitoring the output of the processes running in a container.
+
+```bash
+docker logs [OPTIONS] CONTAINER
+```
+
+- `docker logs my-container`: Print the logs of the container named my-container
+- `docker logs -f my-container`: Display the logs and keep updating the terminal with new messages as they are written
+
+## docker --help
+
+Display the help documentation for docker, including the list of available commands and their description.
+
+```bash
+docker --help
+```
+
+## docker image prune
+
+Remove unused docker images on the host to free up space
+
+```bash
+docker image prune [OPTIONS]
+```
