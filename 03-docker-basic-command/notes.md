@@ -144,3 +144,11 @@ Create and run an ubuntu container, echo the sentence "This will self-destruct",
 ```bash
 docker run --rm ubuntu echo "This will self-destruct"
 ```
+
+## docker inspect
+
+Use to retrieve detailed, low-level information about **containers**, **images**, **volumes**, or networks in JSON format.
+
+```bash
+docker inspect [OPTIONS] OBJECT [OBJECT]
+```
