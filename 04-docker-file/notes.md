@@ -44,3 +44,25 @@ Use this command to display image layers and their details.
 ```bash
 docker history <image name>
 ```
+
+## Docker File Structure - CMD
+
+CMD is used to specify the command to be executed when the container is started.
+
+- Only one CMD instruction should exist in a Dockerfile.
+- If there are more than one CMD instructions in a Dockerfile, only the last CMD instruction will take effect.
+- CMD can be overridden at the container start time.
+
+```bash
+CMD ["executable", "param1", "param2"]
+```
+
+## docker build command explained
+
+- PATH the build context - usually the current directory
+
+```bash
+dokcer build [OPTIONS] PATH | URL | -
+```
+
+- `docker build -t myapp.`: Build the image myapp from the dockerfile in the current directory. The current directory is the build context.
