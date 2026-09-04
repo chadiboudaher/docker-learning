@@ -66,3 +66,13 @@ dokcer build [OPTIONS] PATH | URL | -
 ```
 
 - `docker build -t myapp.`: Build the image myapp from the dockerfile in the current directory. The current directory is the build context.
+
+## Docker File Structure - EXPOSE
+
+The EXPOSE instruction informs Docker that the container listens on the specified network ports at runtime.
+
+- It is informational only
+
+```bash
+EXPOSE <port>
+```
