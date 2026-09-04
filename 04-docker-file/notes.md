@@ -76,3 +76,11 @@ The EXPOSE instruction informs Docker that the container listens on the specifie
 ```bash
 EXPOSE <port>
 ```
+
+## Docker File Structure - COPY
+
+The COPY instruction copies new files or directories from <src> and adds them to filesystem of the container at the path <dest>.
+
+```bash
+COPY <src> <dest>
+```
